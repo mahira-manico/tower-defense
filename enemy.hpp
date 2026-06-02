@@ -1,11 +1,11 @@
 #include <iostream>
 
 float move;
-int takeDamage(int amount);
+int takeDamage(const int amount);
 
 class Enemy{
     public:
-    Enemy(int wave);
+    Enemy(const int waveLevel, const float spawnX, const float spawnY);
     int hp;
     int maxHp;
     float speed;
@@ -13,7 +13,8 @@ class Enemy{
     int rewardsCoins;
     int pathIndex;
 
-    void move(float nextY, float nextX);
-    bool takeDamage(int amount);
+    void move(const float nextY, const float nextX);
+    bool takeDamage(const int amount);
+    bool isAlive();
 
 };
