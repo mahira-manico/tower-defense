@@ -1,19 +1,21 @@
 #include "raylib.h"
 #include "MenuView.hpp"
 
+struct WindowContext{
+
+};
+
 int main() {
-    // On ouvre une fenêtre de la taille de ton choix
+
     InitWindow(1280, 720, "Test en direct de mon Menu");
-    SetTargetFPS(60); // 60 images par seconde
+    SetTargetFPS(60); 
 
     MenuView menuView;
+    WindowContext dummyContext;
 
-    // Boucle de rendu en direct
     while (!WindowShouldClose()) {
         BeginDrawing();
-            
-            // C'est ici que ta fonction magique dessine !
-            menuView.drawMainMenu(); 
+            menuView.drawMainMenu(dummyContext); 
             
         EndDrawing();
     }

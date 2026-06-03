@@ -16,7 +16,7 @@ class MenuView{
     ~MenuView();
 
     void drawMainMenu(WindowContext& context);
-    void drawOptionsPanel(WindowContext& context, int currentVolume);
-    void drawCredits(WindowContext& context)
+    void drawOptionsPanel(WindowContext& context, const int currentVolume);
+    void drawCredits(WindowContext& context);
 
 };
