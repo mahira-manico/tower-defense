@@ -34,6 +34,9 @@ public:
     void addCoins(int amount);
     bool spendCoins(int amount);
 
+    // Increase player score
+    void addScore(int amount);
+
     // Save the final score
     void saveHighScore();
 

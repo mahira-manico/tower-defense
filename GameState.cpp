@@ -35,6 +35,12 @@ bool GameState::spendCoins(int amount)
     return false;
 }
 
+// Add points to the score
+void GameState::addScore(int amount)
+{
+    score += amount;
+}
+
 // Save the current score to a file
 void GameState::saveHighScore()
 {
